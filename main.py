@@ -1,4 +1,5 @@
 def create_bank_data(file_path):
+    # Anpassung: If unterscheidung welche import variante durchgeführt werden soll anhand der user eingabe
     raw_data = import_CobaGiro(file_path)
     bank_data = []
 
