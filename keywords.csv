@@ -1,15 +1,17 @@
 category,keywords
-Miete,miete|studierendenwerk|wohnheim|rent|vermietung|hausgeld|nebenkosten
+Miete,miete|studierendenwerk|wohnheim|rent|vermietung|hausgeld|nebenkosten|calle
 Gehalt,gehalt|lohn|entgelt|gehaltszahlung|lohnzahlung|gehaltsabrechnung|gehaltseingang
 Streaming,netflix|prime video|disney|streamingdienst|stream|video on demand
+Spenden, spende|donation
 LaufendeKosten,gas|wasser|stadtwerke|energie|strom|heizung|nebenkosten
 Versicherungen,versicherung|krankenversicherung|lebensversicherung|kfz-versicherung|hausratversicherung
 Kreditkarten,barclays|visa|kreditkarte|mastercard|credit card|kartenabrechnung
 Sozialleistungen,forderungsnummer|kindergeld|landesoberkasse|sozialhilfe|arbeitslosengeld|hartz iv
 Investments,depot|verrechnungskonto|investment|aktie|etf|derivat|sparplan|sparpläne|fonds|anlage|kapitalanlage
-Freizeit,kino|sport|unterhaltung|fitness|fitnessstudio|hobby|freizeitpark|dance|club|klub
-Essen-Gehen,bar|restaurant|food|cafe|bistro|gaststätte|imbiss|doner|kebab|mc donald|kfc|bk|glovo|lieferando|uber eats
-Lebensmittel,lebensmittel|supermarkt|bäckerei|metzgerei|gemüse|obst|nahrungsmittel|aldi|lidl|edeka|rewe|carrefour|tesco|sainsbury's|walmart|kroger|costco|spar|auchan|metro|coop|mercadona|delhaize|leclerc|albert heijn|waitrose|morrison's|intermarche|publix|ica|conad|migros|co-op|el corte ingles|safeway|loblaws|woolworths|coles|penny|netto|kaufland|real|meijer|hy-vee|ica gruppen|sobeys|big y|winco foods|aldi nord|aldi süd|sprouts farmers market|whole foods|trader joe's|wegmans|h-e-b|alcampo|eroski
-Reisen, ryanair|lufthansa|flix|eurowings|booking.com|airbnb|uber
+Freizeit,kino|sport|unterhaltung|fitness|fitnessstudio|hobby|freizeitpark|dance|club|klub|mamanucca|cerveceria|parros|chess
+Essen-Gehen,bar|restaurant|food|cafe|bistro|gaststätte|imbiss|doner|kebab|mc donald|kfc|bk|glovo|lieferando|uber eats|mcdonald|100 montaditos
+Lebensmittel,lebensmittel|supermercat|supermarkt|simply|bäckerei|metzgerei|gemüse|obst|nahrungsmittel|aldi|lidl|edeka|rewe|carrefour|tesco|sainsbury's|walmart|dia|kroger|costco|spar|auchan|metro|coop|mercadona|delhaize|leclerc|albert heijn|waitrose|morrison's|intermarche|publix|ica|conad|migros|co-op|el corte ingles|safeway|loblaws|woolworths|coles|penny|netto|kaufland|real|meijer|hy-vee|ica gruppen|sobeys|big y|winco foods|aldi nord|aldi süd|sprouts farmers market|whole foods|trader joe's|wegmans|h-e-b|alcampo|eroski
+Reisen,ryanair|lufthansa|flix|eurowings|booking.com|airbnb|uber|europcar|travel
+Kleidung,h&m|zara|primark|next|c&a|marks & spencer|arcadia group|tk maxx|v&d|galeries lafayette|el corte inglés|gruppo coin|otto group|karstadt|debenhams|john lewis|house of fraser|kiabi|mango|bershka|pull & bear|massimo dutti|oysho|stradivarius|uterqüe|topshop|topman|miss selfridge|dorothy perkins|evans|wallis|burton|new look|river island|all saints|jack & jones|vero moda|only|pieces|vila|asos|boohoo|prettylittlething|missguided|fashionnova|shein|romwe|zaful|forever 21|urban outfitters|american apparel|gap|uniqlo
+Tankstellen,shell|bp|total|esso|chevron|lukoil|aral|repsol|circle k|avia|omv|q8|eni|petronas|agip|st1|neste|gulf|tamoil|westfalen|tank
 OnlineEinkauf,amazon|paypal|ebay|online shop|online kauf|online bestellung|internetkauf
-Einkauf,shopping|supermarkt|einzelhandel|markt|laden|kauf
