@@ -23,21 +23,21 @@ def extract_modified_purpose(text):
     end_to_end_ref_index = text.find('End-to-End-Ref')
     if end_to_end_ref_index != -1:
         text_before_end_to_end = text[:end_to_end_ref_index].strip()
-        # Extrahiert den Text nach der letzten Zahl vor "End-to-End-Ref"
+        # extrahiert den Text nach der letzten Zahl vor "End-to-End-Ref"
         match = re.search(r'\d+(.*)', text_before_end_to_end)
         if match:
             after_number_to_end_to_end = match.group(1).strip()
-            # Überprüfen, ob der Text zwischen der ersten Zahl und "End-to-End-Ref" nur aus Zahlen besteht
+            # überprüfen, ob Text zwischen ersten Zahl und "End-to-End-Ref" nur aus Zahlen besteht
             if re.search('[a-zA-Z]', after_number_to_end_to_end):
                 # Wenn Buchstaben vorhanden sind, verwenden Sie diesen Teil
                 return after_number_to_end_to_end
             else:
-                # Wenn keine Buchstaben vorhanden sind, verwenden Sie den Text vor der ersten Zahl
+                # wenn keine Buchstaben vorhanden sind, verwendet Text vor der ersten Zahl
                 return text_before_end_to_end[:match.start()].strip()
         else:
             return text_before_end_to_end
     else:
-        # Wenn "End-to-End-Ref" nicht vorhanden ist, verwenden Sie den Text vor der ersten Zahl
+        # wenn "End-to-End-Ref" nicht vorhanden ist, verwendet Text vor der ersten Zahl
         match = re.split(r'\d', text, 1)
         return match[0].strip() if match else text
 sorted_statement = import_cobag()
