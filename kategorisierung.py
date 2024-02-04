@@ -1,26 +1,22 @@
-def kategorisiere_transaktion(verwendungszweck, betrag):
-    kategorien = {
-        'Miete': {'keywords': ['miete', 'studierendenwerk', 'wohnheim', 'rent']},
-        'Einkauf': {'keywords': ['einkauf', 'kauf', 'shopping']},
-        'Gehalt': {'keywords': ['gehalt', 'lohn', 'entgelt']},
-        'OnlineEinkauf': {'keywords': ['amazon', 'paypal', 'ebay']},
-        'LaufendeKosten': {'keywords': ['gas', 'wasser', 'stadtwerke']},
-        'Versicherungen': {'keywords': ['versicherung']},
-        'Kreditkarten': {'keywords': ['barclays', 'visa', 'kreditkarte']},
-        'Sonstiges': {'keywords': []}
-    }
-    # konvertieren des formates des Verwendungszwecks in Kleinbuchstaben, um zu filtern
+import csv
+
+def load_keywords_from_csv(file_path):
+    kategorien = {}
+    with open(file_path, newline='', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            kategorie = row['category']
+            keywords = row['keywords'].split('|')
+            kategorien[kategorie] = {'keywords': keywords}
+    return kategorien
+
+def kategorisiere_transaktion(verwendungszweck, betrag, empfänger, kategorien):
     verwendungszweck_klein = verwendungszweck.lower()
-
-    # Bestimme, ob es sich um eine Einnahme oder Ausgabe handelt
-    oberkategorie = 'Einnahmen' if not betrag.startswith('-') else 'Ausgaben'
-
-    # Überprüfe jede Kategorie
+    empfaenger_klein = empfänger.lower()
+    oberkategorie = 'Einnahmen' if betrag > 0 else 'Ausgaben'
     for kategorie, data in kategorien.items():
         if any(keyword in verwendungszweck_klein for keyword in data['keywords']):
-            if kategorie and betrag.startswith('-'):
-                return kategorie, oberkategorie
-            elif kategorie and not betrag.startswith('-'):
-                return kategorie, oberkategorie
-    return 'Sonstiges', oberkategorie  # Rückgabewert, wenn keine Übereinstimmung gefunden wird
-
+            return kategorie, oberkategorie
+        if any(keyword in empfaenger_klein for keyword in data['keywords']):
+            return kategorie, oberkategorie
+    return 'Sonstiges', oberkategorie
