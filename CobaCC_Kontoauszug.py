@@ -12,16 +12,16 @@ def import_cobacc():
             
             verwendungszweck_words = verwendungszweck.split()
             
-            # Nimm nur die ersten beiden Wörter/Zahlen, wenn vorhanden
+            # Nimmt nur die ersten beiden Wörter/Zahlen, wenn vorhanden
             modified_verwendungszweck = ' '.join(verwendungszweck_words[:2])
-            # Setze empfaenger basierend auf dem Betrag
+            # setzt empfänger basierend auf dem Betrag
             if betrag > 0:
                 empfaenger = "ich"
             else:
-                # Nimm die ersten zwei Wörter des Verwendungszwecks als Empfänger
+                # nimmt die ersten zwei Wörter des Verwendungszwecks als Empfänger
                 empfaenger = ' '.join(verwendungszweck_words[:2])
           
-            values_list = [buchungsdatum, betrag, modified_verwendungszweck, empfaenger] # oberkategorie, kategorie
+            values_list = [buchungsdatum, betrag, modified_verwendungszweck, empfaenger] 
             bank_data.append(values_list)
         return bank_data
     
