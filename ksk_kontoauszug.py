@@ -1,7 +1,7 @@
 def import_ksk():
     
     # Path to the Account Statement file
-    file_path = 'Konstoauszug_November.CSV'
+    file_path = 'KSK.CSV'
 
     # Open the CSV file and read it
     with open(file_path, 'r', encoding='iso-8859-1') as account_statement:
