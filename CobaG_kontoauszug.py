@@ -3,7 +3,7 @@ import re
 
 
 def import_cobag():
-    file_path = r"C:\Users\Florian\OneDrive\Techlabs 2023\CoBa.csv"
+    file_path = r"CoBa.csv"
     bank_data = []
     with open(file_path, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=';')
