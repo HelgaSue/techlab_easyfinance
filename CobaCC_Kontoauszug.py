@@ -1,7 +1,7 @@
 import csv
 
 def import_cobacc():
-    file_path = r"C:\Users\Florian\OneDrive\Techlabs 2023\CC.csv"
+    file_path = r"CC.csv"
     bank_data = []
     with open(file_path, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=';')
